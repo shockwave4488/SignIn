@@ -180,7 +180,7 @@
             <!-- Arrival Time-->
             <p style="margin-bottom:13px; font-weight:bold; font-size:18px;"></p>
             <div class="flip-y">
-                <div class="btn-group material_btn_group flip-y">
+                <div class="btn-group material_btn_group flip-y" style="display:inline">
                     <select class="dropdown-toggle material_dropdown_btn material_btn material_btn_primary" id="position5" onchange="showDiv(5);">
                         <option id="Nposition5" selected="selected" value="NN">Arrival Time</option>
                         <option id="A" value="6:30" class="material_dropdown_menu_link A"> 6:30</option>
@@ -193,9 +193,8 @@
                         <option id="Dd" value="10:00"   class="material_dropdown_menu_link D"> 10:00</option>
                     </select>
                 </div>
-                <br/>
                 <!-- Leave Time -->
-                <div class="btn-group material_btn_group flip-y">
+                <div class="btn-group material_btn_group flip-y" style="display:inline">
                     <select class="dropdown-toggle material_dropdown_btn material_btn material_btn_primary" id="position4" onchange="showDiv(4);">
                         <option id="Nposition4" selected="selected" value="NN">Leave Time</option>
                         <option id="A2" value="6:30" class="material_dropdown_menu_link A">6:30</option>
@@ -207,9 +206,22 @@
                         <option id="D2" value="9:30"   class="material_dropdown_menu_link D"> 9:30</option>
                         <option id="Dd2" value="10:00"   class="material_dropdown_menu_link D"> 10:00</option>
                     </select>
+                    </div>
+                    <!--Yesterday-->
+                    <div class="btn-group material_btn_group flip-y" style="display:inline">
+                        <select class="dropdown-toggle material_dropdown_btn material_btn material_btn_primary" id="position6" onchange="showDiv(4);">
+                            <option id="Nposition6" selected="selected" value="NN">I forgot yesterday!</option>
+                            <option id="A3" value=".5" class="material_dropdown_menu_link A">.5 Hours</option>
+                            <option id="Aa3" value="1" class="material_dropdown_menu_link A">1 Hour</option>
+                            <option id="B3" value="1.5"   class="material_dropdown_menu_link B">1.5 Hours</option>
+                            <option id="Bb3" value="2" class="material_dropdown_menu_link B"> 2 Hours</option>
+                            <option id="C3" value="2.5"   class="material_dropdown_menu_link C"> 2.5 Hours</option>
+                            <option id="Cc3" value="3"   class="material_dropdown_menu_link C"> 3 Hours</option>
+                            <option id="D3" value="3.5"   class="material_dropdown_menu_link D"> 3.5 Hours</option>
+                        </select>
                 </div>
                 <br/>
         <div/>
-                <input type="button" style="font-size:20px" class="btn btn-default material_btn material_btn_primary home-btn" value="Submit">
+                <input type="button" style="font-size:20px; width:100%;" class="btn btn-default material_btn material_btn_primary home-btn" value="Submit">
 </body>
 </html>
