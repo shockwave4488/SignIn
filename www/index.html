@@ -14,7 +14,10 @@
     <p><label for="comment">Comment:</label><br>
         <textarea id="comment" name="comment" cols="40"></textarea></p>
     <p id="result"></p>
+
+
     <input type="submit" value="Send">
+
 
 </form>
 <script data-cfasync="false" type="text/javascript">
@@ -50,7 +53,7 @@
             // callback handler that will be called on success
             request.done(function (response, textStatus, jqXHR){
                 // log a message to the console
-                $('#result').html('<a href="https://docs.google.com/spreadsheets/d/10tt64TiALYhPMqR2fh9JzkuhxW7oC0rXXPb_pmJ7HAY/edit?usp=sharing" target="_blank">Success - see Google Sheet</a>');
+                $('#result').html('<a href="https://docs.google.com/spreadsheets/d/1P4S9Hp5U0iH6s8jG6WR2y1RkIdBVsmS5seLBZMfN7pk/edit#gid=0" target="_blank">Success - see Google Sheet</a>');
                 console.log("Hooray, it worked!");
             });
 
@@ -75,7 +78,6 @@
         });
     });
 </script>
-
 
 </body>
 </html>
