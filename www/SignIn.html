@@ -177,21 +177,13 @@
                 <div>
                     <label class="item-stacked-label inline">
                         <span class="input-label">Today's Hours</span>
-                        <input id="hours" type="text"maxlength="4" placeholder="3"  onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                        <input id="hours" type="number" min="0.5" max="12" name="Hours" type="text" value="3">
                     </label>
                     <label class="item-stacked-label inline">
                         <span class="input-label">I forgot yesterday!</span>
-                        <input id="yesterday" maxlength="4" placeholder="3" type="text"  onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                        <input id="yesterday" type="number" min="0.5" max="12" name="Yesterday" placeholder="3">
                     </label>
-                    <p><label for="name">Name:</label>
-                        <input id="name" name="name" type="text" value=""></p>
-                    <p><label for="comment">Comment:</label><br>
-                        <textarea id="comment" name="comment" cols="40"></textarea></p>
-                    <p id="result"></p>
-
-
-                    <input type="submit" value="Send">
-
+                    <input type="button" style="font-size:20px; width:100%;" class="btn btn-default material_btn material_btn_primary home-btn" value="Send">
                 </div>
                 </br>
             </div>
@@ -254,6 +246,5 @@
                 });
             });
         </script>
-        <input type="button" style="font-size:20px; width:100%;" class="btn btn-default material_btn material_btn_primary home-btn" value="Send">
     </body>
 </html>
