@@ -9,7 +9,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <script data-cfasync="false" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
-<body>
+<body style="background-color:lightsteelblue">
 <form id="foo">
 <div>
     <table id="names_table">
@@ -181,47 +181,15 @@
     </table>
     <div>
         <div>
-            <!-- Arrival Time-->
-            <!--<p style="margin-bottom:13px; font-weight:bold; font-size:18px;"></p>
-                <div id="arrival" value="arrival" class="btn-group material_btn_group flip-y" style="display:inline">
-                    <select class="dropdown-toggle material_dropdown_btn material_btn material_btn_primary" id="arrival_time" onchange="showDiv(5);">
-                        <option id="Nposition5" selected="selected" value="NN">Arrival Time</option>
-                        <option id="A" value="6:30" class="material_dropdown_menu_link A">6:30</option>
-                        <option id="Aa" value="7:00" class="material_dropdown_menu_link A">7:00</option>
-                        <option id="B" value="7:30"   class="material_dropdown_menu_link B">7:30</option>
-                        <option id="Bb" value="8:00" class="material_dropdown_menu_link B">8:00</option>
-                        <option id="C" value="8:30"   class="material_dropdown_menu_link C">8:30</option>
-                        <option id="Cc" value="9:00"   class="material_dropdown_menu_link C">9:00</option>
-                        <option id="D" value="9:30"   class="material_dropdown_menu_link D">9:30</option>
-                        <option id="Dd" value="10:00"   class="material_dropdown_menu_link D">10:00</option>
-                    </select>
-                </div>
-                <!-- Leave Time --><!--
-                <div id="departure" value="departure" class="btn-group material_btn_group flip-y" style="display:inline">
-                    <select class="dropdown-toggle material_dropdown_btn material_btn material_btn_primary" id="leave_time" onchange="showDiv(4);">
-                        <option id="Nposition4" selected="selected" value="NN">Leave Time</option>
-                        <option id="A2" value="6:30" class="material_dropdown_menu_link A">6:30</option>
-                        <option id="Aa2" value="7:00" class="material_dropdown_menu_link A">7:00</option>
-                        <option id="B2" value="7:30"   class="material_dropdown_menu_link B">7:30</option>
-                        <option id="Bb2" value="8:00" class="material_dropdown_menu_link B">8:00</option>
-                        <option id="C2" value="8:30"   class="material_dropdown_menu_link C">8:30</option>
-                        <option id="Cc2" value="9:00"   class="material_dropdown_menu_link C">9:00</option>
-                        <option id="D2" value="9:30"   class="material_dropdown_menu_link D">9:30</option>
-                        <option id="Dd2" value="10:00"   class="material_dropdown_menu_link D">10:00</option>
-                    </select>
-                    </div>-->
-                    <!--Yesterday-->
-                    <div id="yesterdayhours" value="yesterday" class="btn-group material_btn_group flip-y" style="display:inline">
-                        <select class="dropdown-toggle material_dropdown_btn material_btn material_btn_primary" id="yesterday" onchange="showDiv(4);">
-                            <option id="Nposition6" selected="selected" value="NN">I forgot yesterday!</option>
-                            <option id="A3" value=".5" class="material_dropdown_menu_link A">.5 Hours</option>
-                            <option id="Aa3" value="1" class="material_dropdown_menu_link A">1 Hour</option>
-                            <option id="B3" value="1.5"   class="material_dropdown_menu_link B">1.5 Hours</option>
-                            <option id="Bb3" value="2" class="material_dropdown_menu_link B">2 Hours</option>
-                            <option id="C3" value="2.5"   class="material_dropdown_menu_link C">2.5 Hours</option>
-                            <option id="Cc3" value="3"   class="material_dropdown_menu_link C">3 Hours</option>
-                            <option id="D3" value="3.5"   class="material_dropdown_menu_link D">3.5 Hours</option>
-                        </select>
+            <label class="item-stacked-label inline">
+                <span class="input-label">Today's Hours</span>
+                <input id="hours" type="text"maxlength="4" placeholder="3"  onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+            </label>
+            <label class="item-stacked-label inline">
+                <span class="input-label">I forgot yesterday!</span>
+                <input id="yesterday" maxlength="4" placeholder="3" type="text"  onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+            </label>
+
                         <div style="display:inline">
                             <label class="toggle">
                                 <input id="playRight" type="checkbox">
